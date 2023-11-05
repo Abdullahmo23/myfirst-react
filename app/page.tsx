@@ -1,27 +1,9 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-
-type HeaderParams ={
-  text:string;
-}
+import Header from '@/app/components/Header'
+import Description from '@/app/components/Description'
 
 
-function Header(props:HeaderParams){
-  return <h1>{props.text}</h1>
-}
-
-function List(){
-  return <p>A list of details</p>
-}
-
-function Description(){
-  return (
-    <>
-    <div>Description</div>
-    <List />
-    </>
-  )
-}
 
 export default function Home() {
   return (
